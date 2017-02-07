@@ -12,7 +12,7 @@ cp .ruby-gemset.example .ruby-gemset
 cd ../power_system
 bundle install
 rake db:migrate
-RAILS_ENV=production/staging/development rake import:data_728kw
+RAILS_ENV=production/staging/development rake import:data
 ```
 
 # Development
