@@ -1,6 +1,6 @@
 module SpreadSheetParser
   module Task
-    module Sheet728kw
+    module Sheet683Point2kw
       def self.included(base)
         base.include InstanceMethods
       end
@@ -40,7 +40,7 @@ module SpreadSheetParser
                   sub_unit_measurement.send("#{first_column_name}=", row[index])
                   second_index = index + 3
                   second_column_name = "unit_#{power_sub_unit_row[second_index].downcase}"
-                  sub_unit_measurement.send("#{second_column_name}=", row[second_index])
+                  sub_unit_measurement.send("#{second_column_name}=", row[index])
                 end
 
                 sub_unit_measurement.save

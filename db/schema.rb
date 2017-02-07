@@ -11,17 +11,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170204151810) do
+ActiveRecord::Schema.define(version: 20170207172136) do
 
-  create_table "power_sub_units", force: :cascade do |t|
-    t.integer  "power_unit_id", limit: 4
+  create_table "measurements", force: :cascade do |t|
     t.date     "start_date"
     t.date     "end_date"
-    t.decimal  "insolation",              precision: 22, scale: 17
-    t.decimal  "unit_a",                  precision: 22, scale: 17
-    t.decimal  "unit_d",                  precision: 22, scale: 17
-    t.datetime "created_at",                                        null: false
-    t.datetime "updated_at",                                        null: false
+    t.decimal  "insolation",                  precision: 22, scale: 17
+    t.decimal  "unit_a",                      precision: 22, scale: 17
+    t.decimal  "unit_b",                      precision: 22, scale: 17
+    t.decimal  "unit_c",                      precision: 22, scale: 17
+    t.decimal  "unit_d",                      precision: 22, scale: 17
+    t.integer  "power_sub_unit_id", limit: 4
+    t.datetime "created_at",                                            null: false
+    t.datetime "updated_at",                                            null: false
+  end
+
+  add_index "measurements", ["power_sub_unit_id"], name: "index_measurements_on_power_sub_unit_id", using: :btree
+  add_index "measurements", ["start_date"], name: "index_measurements_on_start_date", using: :btree
+
+  create_table "power_sub_units", force: :cascade do |t|
+    t.string   "unit",          limit: 255
+    t.integer  "power_unit_id", limit: 4
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
   end
 
   add_index "power_sub_units", ["power_unit_id"], name: "index_power_sub_units_on_power_unit_id", using: :btree

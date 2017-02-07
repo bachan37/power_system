@@ -11,6 +11,12 @@ module PowerSystem
 
     Dir[
       "lib/spread_sheet_parser/task/sheet_728kw.rb",
+      "lib/spread_sheet_parser/task/sheet_683_point_2kw.rb",
+      "lib/spread_sheet_parser/task/sheet_620_point_6kw.rb",
+      "lib/spread_sheet_parser/task/sheet_603_point_2kw.rb",
+      "lib/spread_sheet_parser/task/sheet_690_point_3kw.rb",
+      "lib/spread_sheet_parser/task/sheet_613_point_6kw.rb",
+      "lib/spread_sheet_parser/task/sheet_743_point_4kw.rb",
       "lib/spread_sheet_parser/base.rb",
       "lib/spread_sheet_parser/mesquite.rb"
     ].each do |file|
