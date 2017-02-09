@@ -13,6 +13,9 @@ cd ../power_system
 bundle install
 rake db:migrate
 RAILS_ENV=production/staging/development rake import:data
+RAILS_ENV=production/staging/development rake calculate::unit_day_mean
+RAILS_ENV=production/staging/development rake calculate::unit_day_super_mean
+rails s
 ```
 
 # Development
