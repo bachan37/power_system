@@ -1,0 +1,17 @@
+%table
+  - @power_unit_means.each do |k, day_mean_hash|
+    %tr
+      %td.right-align
+        = k
+      - @super_means.each do |super_mean_date, super_mean_value|
+        - calculate_flag = day_mean_hash[super_mean_date] - super_mean_value
+        %td.center-align.circle-wrapper
+          .circle.point{class: calculate_flag > 0 ? "positive" : "negative", title: "#{super_mean_date} PowerUnit=#{k} SuperMean=#{super_mean_value}, Mean=#{day_mean_hash[super_mean_date]}"}
+  %tr
+    %td
+      &nbsp;
+    - @super_means.each do |super_mean_key, super_mean_value|
+      %td#x_label.center-align
+        = Date.parse(super_mean_key).strftime("%d")
+        
+      

@@ -13,3 +13,44 @@
  *= require_tree .
  *= require_self
  */
+.right-align{
+    text-align: right;
+}
+.center-align{
+    text-align: center;
+}
+#x_label{
+    min-width: 30px;
+    word-wrap: break-word;
+}
+.circle-wrapper{
+    width: 30px;
+    height: 30px;
+}
+.positive{
+    background-color: #33b86c;
+}
+.positive:hover{
+    border: 1px inset #00FF00;
+}
+.negative{
+    background-color: #ff6666;
+}
+.negative:hover{
+    border: 1px inset #ff0000;
+}
+.point{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    display: inline-block;
+    bottom: -0.855rem;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+.point:hover{
+    width: 1.25rem;
+    height: 1.25rem;
+}
