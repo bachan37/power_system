@@ -6,7 +6,7 @@ namespace :import do
     PowerSubUnit.send(:reset)
     Measurement.send(:reset)
     file_path = File.join(Rails.root, "/public/power_log/#{Rails.env}/Mesquite\ Total\ Production\ Analysis\ v2.xlsx")
-    sheets = ["728kW", "683.2kW", "620.6kW", "603.2kW", "690.3 kW", "613.6 kW", "743.4 kW"]
+    sheets = ["728kW", "683.2kW", "620.6kW", "603.2kW", "690.3 kW", "613.6 kW", "743.4 kW", "671kW", "660.8kW", "578.2kW", "693 kW", "590 kW", "715kW", "705.6kW"]
 
     sheets.each do |sheet|
       puts "Processing #{sheet}"

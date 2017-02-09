@@ -7,6 +7,13 @@ module SpreadSheetParser
     include ::SpreadSheetParser::Task::Sheet690Point3kw
     include ::SpreadSheetParser::Task::Sheet613Point6kw
     include ::SpreadSheetParser::Task::Sheet743Point4kw
+    include ::SpreadSheetParser::Task::Sheet671kw
+    include ::SpreadSheetParser::Task::Sheet660Point8kw
+    include ::SpreadSheetParser::Task::Sheet578Point2kw
+    include ::SpreadSheetParser::Task::Sheet693kw
+    include ::SpreadSheetParser::Task::Sheet590kw
+    include ::SpreadSheetParser::Task::Sheet715kw
+    include ::SpreadSheetParser::Task::Sheet705Point6kw
     
     class << self
       def process(options)

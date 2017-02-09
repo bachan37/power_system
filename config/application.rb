@@ -17,6 +17,13 @@ module PowerSystem
       "lib/spread_sheet_parser/task/sheet_690_point_3kw.rb",
       "lib/spread_sheet_parser/task/sheet_613_point_6kw.rb",
       "lib/spread_sheet_parser/task/sheet_743_point_4kw.rb",
+      "lib/spread_sheet_parser/task/sheet_671kw.rb",
+      "lib/spread_sheet_parser/task/sheet_660_point_8kw.rb",
+      "lib/spread_sheet_parser/task/sheet_578_point_2kw.rb",
+      "lib/spread_sheet_parser/task/sheet_693kw.rb",
+      "lib/spread_sheet_parser/task/sheet_590kw.rb",
+      "lib/spread_sheet_parser/task/sheet_715kw.rb",
+      "lib/spread_sheet_parser/task/sheet_705_point_6kw.rb",
       "lib/spread_sheet_parser/base.rb",
       "lib/spread_sheet_parser/mesquite.rb"
     ].each do |file|
